@@ -8,8 +8,8 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?q=80&w=2000&auto=format&fit=crop" 
-          alt="Luxury Yacht Hull" 
+          src="/resort-yacht-service/images/hero-bg.jpg" 
+          alt="Ремонт корпуса яхты — восстановление гелькоута и покраска, Санкт-Петербург" 
           className="w-full h-full object-cover"
         />
         {/* Lighter overlays to make the yacht visible */}

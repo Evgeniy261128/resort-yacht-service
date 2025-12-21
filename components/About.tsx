@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <div className="relative rounded-2xl overflow-hidden border border-navy-700 shadow-2xl">
             <img 
               src="https://images.unsplash.com/photo-1598918843936-e63d3f9e992b?q=80&w=1000&auto=format&fit=crop" 
-              alt="Craftsman repairing boat" 
+              alt="Мастер восстанавливает корпус яхты — ремонт гелькоута, Санкт-Петербург" 
               className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-navy-900/30"></div>

@@ -3,7 +3,7 @@ import { YACHT_BRANDS } from '../constants';
 
 const Marquee: React.FC = () => {
   return (
-    <div className="w-full bg-navy-800/50 border-y border-navy-700 py-6 overflow-hidden relative z-20 backdrop-blur-sm">
+    <div className="w-full bg-navy-800/50 py-6 overflow-hidden relative z-20 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex overflow-hidden mask-linear-fade relative">
          {/* Gradient masks for fading edges */}
         <div className="absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-navy-900 to-transparent"></div>

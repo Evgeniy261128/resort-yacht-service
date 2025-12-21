@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="py-24 bg-carbon border-y border-navy-800">
+    <section className="py-24 bg-carbon">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-slate-white mb-4">

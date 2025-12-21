@@ -4,7 +4,7 @@ import { APP_NAME, NAV_LINKS, SOCIAL_LINKS, CONTACT_INFO } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="kontakty" className="bg-navy-950 border-t border-navy-800 pt-16 pb-8">
+    <footer id="kontakty" className="bg-navy-950 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Pre-footer CTA */}

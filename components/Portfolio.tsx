@@ -28,6 +28,8 @@ const ImageComparison: React.FC<{ before: string; after: string; title: string; 
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: `url(${after})` }}
+          role="img"
+          aria-label={`После: ${title} — результат ремонта корпуса яхты, Санкт-Петербург`}
         >
            <span className="absolute top-4 right-4 bg-navy-900/80 text-teal-accent px-3 py-1 text-xs font-bold rounded uppercase backdrop-blur-md">
             После
@@ -41,6 +43,8 @@ const ImageComparison: React.FC<{ before: string; after: string; title: string; 
             backgroundImage: `url(${before})`,
             width: `${sliderPosition}%` 
           }}
+          role="img"
+          aria-label={`До: ${title} — состояние корпуса яхты до ремонта, Санкт-Петербург`}
         >
           <span className="absolute top-4 left-4 bg-navy-900/80 text-slate-white px-3 py-1 text-xs font-bold rounded uppercase backdrop-blur-md">
             До
