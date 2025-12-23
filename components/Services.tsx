@@ -16,20 +16,20 @@ const Services: React.FC = () => {
           {SERVICES.map((service, idx) => (
             <div 
               key={service.id}
-              className={`group relative p-8 rounded-2xl bg-navy-800/50 border border-navy-700 hover:border-teal-accent/50 transition-all duration-300 hover:bg-navy-800/80 backdrop-blur-sm flex flex-col justify-between ${
+              className={`group relative p-8 rounded-2xl bg-navy-800/80 border border-slate-200/40 hover:border-navy-700 transition-all duration-300 hover:bg-navy-800/50 backdrop-blur-sm transform-gpu hover:scale-[1.02] hover:shadow-lg flex flex-col justify-between ${
                 service.colSpan === 2 ? 'md:col-span-2' : ''
               }`}
             >
-              <div className="absolute top-0 right-0 p-30 opacity-10 group-hover:opacity-20 transition-opacity pointer-events-none">
+              <div className="absolute top-0 right-0 p-30 opacity-20 group-hover:opacity-10 transition-opacity pointer-events-none">
                  {/* Decorative huge icon in background */}
                  <service.icon size={120} />
               </div>
 
               <div>
-                <div className="w-12 h-12 rounded-lg bg-navy-900 border border-navy-700 flex items-center justify-center mb-6 group-hover:border-teal-accent group-hover:shadow-[0_0_15px_rgba(100,255,218,0.2)] transition-all">
-                  <service.icon className="w-6 h-6 text-teal-accent" />
+                <div className="w-12 h-12 rounded-lg bg-navy-900 border border-teal-accent flex items-center justify-center mb-6 group-hover:border-navy-700 group-hover:shadow-none shadow-[0_0_15px_rgba(100,255,218,0.2)] transition-all">
+                  <service.icon className="w-6 h-6 text-teal-accent group-hover:text-slate-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-white mb-3 group-hover:text-teal-accent transition-colors">
+                <h3 className="text-xl font-bold text-teal-accent mb-3 group-hover:text-slate-white transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-slate-light leading-relaxed">
@@ -37,7 +37,7 @@ const Services: React.FC = () => {
                 </p>
               </div>
 
-              <div className="flex items-center text-teal-accent text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+              <div className="flex items-center text-teal-accent text-sm font-semibold opacity-100 group-hover:opacity-0 transition-opacity translate-y-0 group-hover:translate-y-2 duration-300">
                 Подробнее &rarr;
               </div>
             </div>
